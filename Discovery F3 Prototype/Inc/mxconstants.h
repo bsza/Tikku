@@ -38,6 +38,8 @@
 
 /* Private define ------------------------------------------------------------*/
 #define ACCELERO_I2C_ADDRESS 0x32
+#define LSM9DS1_ACC_GYRO_I2C_ADDRESS 0xD4
+#define LSM9DS1_MAGN_I2C_ADDRESS 0x38
 
 #define DRDY_Pin GPIO_PIN_2
 #define DRDY_GPIO_Port GPIOE
@@ -75,6 +77,10 @@
 #define LD8_GPIO_Port GPIOE
 #define LD6_Pin GPIO_PIN_15
 #define LD6_GPIO_Port GPIOE
+#define IMU_EN_Pin GPIO_PIN_9
+#define IMU_EN_GPIO_Port GPIOC
+#define IMU_INT_Pin GPIO_PIN_8
+#define IMU_INT_GPIO_Port GPIOA
 #define DM_Pin GPIO_PIN_11
 #define DM_GPIO_Port GPIOA
 #define DP_Pin GPIO_PIN_12
@@ -83,6 +89,12 @@
 #define SWDIO_GPIO_Port GPIOA
 #define SWCLK_Pin GPIO_PIN_14
 #define SWCLK_GPIO_Port GPIOA
+#define SPI3_CS_Pin GPIO_PIN_0
+#define SPI3_CS_GPIO_Port GPIOD
+#define BT_RST_Pin GPIO_PIN_1
+#define BT_RST_GPIO_Port GPIOD
+#define BT_INT_Pin GPIO_PIN_3
+#define BT_INT_GPIO_Port GPIOD
 #define SWO_Pin GPIO_PIN_3
 #define SWO_GPIO_Port GPIOB
 #define MEMS_INT1_Pin GPIO_PIN_0
